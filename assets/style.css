@@ -1,0 +1,83 @@
+/* SCROLL TO TOP BUTTON */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #333;
+  color: white;
+  border: none;
+  outline: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+  transition: opacity 0.4s ease-in-out, transform 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+/* DARK MODE STYLES */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode .project-title,
+body.dark-mode .experience-sub-title {
+  color: #f0f0f0;
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .menu-links a:hover {
+  color: #ccc;
+  text-decoration-color: #ccc;
+}
+
+body.dark-mode .menu-links,
+body.dark-mode .details-container,
+body.dark-mode .color-container,
+body.dark-mode .btn,
+body.dark-mode .contact-info-upper-container {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+  border-color: #333;
+}
+
+body.dark-mode .btn-color-1,
+body.dark-mode .btn-color-2 {
+  border: #f0f0f0 0.1rem solid;
+}
+
+body.dark-mode .btn-color-2:hover {
+  background: #333;
+  color: white;
+  border: white 0.1rem solid;
+}
+
+/* DARK MODE TOGGLE BUTTON */
+#darkModeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  z-index: 100;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#darkModeToggle:hover {
+  background-color: #555;
+}
